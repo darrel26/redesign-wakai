@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakai - Bright - Blue</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="gallery-header">
+        <nav>
+            <img src="./assets/images/wakai-logo-header.png" alt="">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="content-section">
+        <div class="gallery-col">
+            <div class="products">
+                <div class="small-images">
+                    <img src="./assets/images/newArrivals1.jpg" onclick="changeFunction(this)">
+                    <img src="./assets/images/newArrivals1-1.jpg" onclick="changeFunction(this)">
+                    <img src="./assets/images/newArrivals1-2.jpg" onclick="changeFunction(this)">
+                </div>
+                <div class="img-container">
+                    <img id="mainImage" src="./assets/images/newArrivals1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <div class="content-menu">
+                <h1>WAKAI</h1>
+                <div class="description">
+                <h2>Footwear Wanita WAKAI - Bright - Shou - Purist Blue</h2>
+                </div>
+                <div class="description">
+                    <p> 
+                         Fleksibiltas optimal yang memungkinkan anda 
+                         beraktivitas tetap nyaman dalam kondisi apapun. Outer sole anti selip dan Texturenya cocok di segala lingkungan. 
+                         Produk Wakai Slip-on yang modis nyaman dipakai berbahan lembut dan fleksibel serta berkualitas’ sangat ringan dan 
+                         sol yang empuk sehingga anda tidak mudah lelah ketika memakainya, Dengan desain trendy dan warna – warna yang 
+                         menarik sangat cocok menemani waktu bersantai anda.
+                        <br>
+                        <br>
+                        Warna:
+                        <br>
+                        Soft Blue
+                        <br>
+                        <br>
+                        SKU:
+                        <br>
+                        WAK0003982.C0088
+                    </p>
+                </div>
+                <h3>Rp.529.000</h3>
+                <div class="product-btn">
+                    <a href="" class="gallery-tokped"><i class="fa fa-arrow-right" aria-hidden="true"></i>Tokopedia</a>
+                    <a href="" class="gallery-onmezzo"><i class="fa fa-arrow-right" aria-hidden="true"></i>Onmezzo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Wakai is a brand that embodies the young, dynamic and spirited individuals. 
+            It embraces the lifestyle of these sophisticated urbanites by offering products 
+            which are <br>carefully crafted and passionately fused with Japanese spirits. 
+            Authenticity, comfort, creativity, and affordability are the main elements of Wakai.
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-twitter" ></i>
+        </div>
+        <p class="end-footer">copyright<i class="fa fa-copyright" aria-hidden="true"></i>2021</p>
+    </section>
+
+    <script>
+        function changeFunction(smallImg){
+            var fullImg = document.getElementById("mainImage");
+            fullImg.src = smallImg.src; 
+        }
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

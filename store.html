@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Location</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="gallery-header">
+        <nav>
+            <img src="./assets/images/wakai-logo-header.png" alt="">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">STORE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="location">
+        <div class="location-col">
+            <div class="loc-btn">
+                <a href="#" class="btn1" id="btn1" onclick="showFunction1()">Mall Kelapa Gading</a>
+                <a href="#" class="btn2" id="btn2" onclick="showFunction2()">Mall Serpong</a>
+                <a href="#" class="btn3" id="btn3" onclick="showFunction3()">Mall Bekasi</a>
+                <div class="desc-loc" id="desc-loc">
+                    <p class="head"> WAKAI </p>
+                    <p class="text">MKG-2</p>
+                    <p class="text">Lantai 1 249 & 251</p>
+                        <br>
+                    <p class="head">PRODUCT</p>
+                    <p class="text">Sepatu</p>
+                        <br>
+                    <p class="head">PHONE</p>
+                    <p class="text">021 452 9604</p>
+                        <br>
+                    <p class="head">WHERE TO PARK</p>
+                    <p class="text">Gedung Parkir 2 Lt. 2 P2/P2A</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="location-col">
+            <div id="changing-location"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.802006207491!2d106.90623761476876!3d-6.157266595542076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f54bbca6c649%3A0x1c1a278e20ff1c47!2sSummarecon%20Mall%20Kelapa%20Gading!5e0!3m2!1sen!2sid!4v1622163252616!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+    </section>
+
+    <section class="footer contact-footer">
+        <h3>About Us</h3>
+        <p>Wakai is a brand that embodies the young, dynamic and spirited individuals. 
+            It embraces the lifestyle of these sophisticated urbanites by offering products 
+            which are <br>carefully crafted and passionately fused with Japanese spirits. 
+            Authenticity, comfort, creativity, and affordability are the main elements of Wakai.
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-twitter" ></i>
+        </div>
+        <p class="end-footer">copyright<i class="fa fa-copyright" aria-hidden="true"></i>2021</p>
+    </section>
+
+    <script>
+        
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn1');
+        var btn3 = document.getElementById('btn1');
+
+        function showFunction1(){
+                document.getElementById('changing-location').innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.802006207491!2d106.90623761476876!3d-6.157266595542076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f54bbca6c649%3A0x1c1a278e20ff1c47!2sSummarecon%20Mall%20Kelapa%20Gading!5e0!3m2!1sen!2sid!4v1622163252616!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+                document.getElementById('desc-loc').innerHTML='<p class="head">WAKAI</p> <p class="text">MKG-2</p> <p class="text">Lantai 1 249 & 251</p> <br> <p class="head">PRODUCT</p> <p class="text">Sepatu</p> <br> <p class="head">PHONE</p> <p class="text">021 452 9604</p> <br> <p class="head">WHERE TO PARK</p> <p class="text">Gedung Parkir 2 Lt. 2 P2/P2A</p>';
+                    
+        };
+        function showFunction2(){
+                document.getElementById('changing-location').innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.171512054409!2d106.6263079147692!3d-6.24111329548237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fc0a0f186afd%3A0x355ee4742c69b52c!2sSummarecon%20Mall%20Serpong!5e0!3m2!1sen!2sid!4v1622162252512!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+                document.getElementById('desc-loc').innerHTML='<p class="head">WAKAI</p> <p class="text">SMS 1</p> <p class="text">1st Floor 11</p> <br> <p class="head">PRODUCT</p> <p class="text">Sepatu, Shoes, T-Shirt, Shirt, Pants, Bag</p> <br> <p class="head">PHONE</p> <p class="text">021 2954 3847</p> <br> <p class="head">WHERE TO PARK</p> <p class="text">Parkir 1F</p>';
+        };
+        function showFunction3(){
+                document.getElementById('changing-location').innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2848220249357!2d106.9988877147691!3d-6.22612759549302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c71cf814d97%3A0xd22a5d56809f070a!2sSummarecon%20Mall%20Bekasi!5e0!3m2!1sen!2sid!4v1622161534413!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+                document.getElementById('desc-loc').innerHTML='<p class="head">WAKAI</p> <p class="text">SMB</p> <p class="text">1st Floor 102 C</p> <br> <p class="head">PRODUCT</p> <p class="text">Sepatu dan Aksesoris</p> <br> <p class="head">PHONE</p> <p class="text">021 2957 2482</p> <br> <p class="head">WHERE TO PARK</p> <p class="text">P1</p>';
+        };
+    </script>
+    
+    
+</body>
+</html>
