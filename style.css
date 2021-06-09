@@ -395,7 +395,12 @@ nav .fa-bars {
     transition: 0.5s;
 }
 
-.tokopedia:hover {
+.catalogue:hover {
+    background: rgba(245,2,0,0.7);
+    border: 1px solid rgba(245,2,0,0.7);
+}
+
+/* .tokopedia:hover {
     background:rgba(32,168,59,1);
     border:1px solid rgba(32,168,59,1);
 }
@@ -403,7 +408,7 @@ nav .fa-bars {
 .onmezzo:hover {
     background:rgba(248,204,11,1);
     border:1px solid rgba(248,204,11,1);
-}
+} */
 
 @media (max-width: 700px) {
     .cta {
